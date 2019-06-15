@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
+-- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 12-Jun-2019 às 21:27
--- Versão do servidor: 10.1.25-MariaDB
--- PHP Version: 7.1.7
+-- Generation Time: 15-Jun-2019 às 04:48
+-- Versão do servidor: 10.1.29-MariaDB
+-- PHP Version: 7.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -40,7 +40,7 @@ CREATE TABLE `info` (
 --
 
 INSERT INTO `info` (`id`, `nome`, `email`, `senha`) VALUES
-(4, 'dfdf', 'juliorodriguesdemiranda@hotmail.com', '123');
+(9, 'jon', 'a@a', '321');
 
 --
 -- Indexes for dumped tables
@@ -61,7 +61,8 @@ ALTER TABLE `info`
 -- AUTO_INCREMENT for table `info`
 --
 ALTER TABLE `info`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;COMMIT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

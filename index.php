@@ -1,3 +1,6 @@
+<<?php 
+session_start();
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +16,7 @@
 
 <div class="container">
 	<h2>Login</h2>
-	<form action="/action_page.php" method="POST">
+	<form action="pagina_autenticada.php" method="POST">
 		<div class="form-group">
 			<label for="email">Email:</label>
 			<input type="email" class="form-control" id="email" placeholder="Digite seu email" name="email" maxlength="40" required autofocus>

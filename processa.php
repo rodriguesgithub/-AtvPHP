@@ -1,13 +1,18 @@
 <?php
 
 include_once("conexao.php");
+include_once("Usuario.php");
 
-$nome = $_POST['nome'];
-$email = $_POST['email'];
-$senha1 = $_POST['pswd1'];
-$senha2 = $_POST['pswd2'];
 
-if ($senha1 == $senha2) {
+$obj = new Usuario($_POST['nome'], $_POST['email'], $_POST['pswd1']);
+
+$nome = $obj->getNome();
+$email = $obj->getEmail();
+$senha1 = $obj->getSenha();
+
+$confirmarSenha2 = $_POST['pswd2'];
+
+if ($obj->getSenha() == $confirmarSenha2) {
 	$query = "insert into info (nome,email,senha) values ('$nome','$email','$senha1')";
 	$salvar = mysqli_query($conexao, $query);
 	echo "<script>javascript:alert('Usuário Cadastrado')</script>";
